@@ -4,26 +4,30 @@
     border: 1px solid lightgrey;
 }
 
-.structure_header{
-    flex : 0.2;
+.structure_header {
+    flex: 0.2;
     border-right: 1px solid lightgrey;
-    display: flex;
-    flex-direction: column;
     overflow-y: hidden;
     overflow-x: scroll;
 }
 
 .structure_header_title {
-    height: 100px;
+    height: 50px;
     border-bottom: 1px solid lightgrey;
 }
 
 .structure_header_body {
-    flex : 1;
+    height: max-content;
 }
 
 .structure_body {
     flex: 0.8;
     display: flex;
     overflow: scroll;
+    transition: width 2s;
+}
+
+.summary_cell {
+    min-height: 30px;
+    border-bottom: 1px solid lightgrey;
 }

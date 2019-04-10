@@ -3,10 +3,12 @@
   <div class="structure_container">
     <div id="structure_header" class="structure_header">
       <div class="structure_header_title">Summary</div>
-      <div class="structure_header_body">Body</div>
+      <div class="structure_header_body">
+        <div *ngFor="let row of summaryRowConfig" class="summary_cell"></div>
+      </div>
     </div>
     <div id="structure_body" class="structure_body" (scroll)="onScroll(e)">
-      <app-strategy *ngFor="let name of names" [name]="name"></app-strategy>
+      <app-strategy *ngFor="let name of names" [name]="name" [summaryRowConfig]="summaryRowConfig"></app-strategy>
     </div>
   </div>
 </div>
