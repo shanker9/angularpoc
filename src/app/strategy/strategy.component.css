@@ -1,0 +1,52 @@
+.strategy {
+    min-width: 200px;
+    border-right: 1px solid steelblue;
+    height: stretch;
+    display: flex;
+    flex-direction: column;
+}
+
+.strategy_header {
+    height: 60px;
+    display: flex;
+}
+
+.strategy_summary_col_header {
+    width: 40%;
+    border-right: 1px solid lightgrey;    
+}
+
+.strategy_col_header{
+    width: 30%;
+    border-right: 1px solid lightgrey;        
+}
+
+.strategy_col_header:last-child {
+    border: 0px;
+}
+
+.strategy_body {
+    flex : 1;
+    display: flex;
+    border-top: 1px solid lightgrey;
+}
+
+.strategy_summary_col {
+    width: 40%;
+    border-right: 1px solid lightgrey;
+}
+
+.strategy_col {
+    width: 30%;
+    border-right: 1px solid lightgrey;    
+}
+
+.strategy_col:last-child {
+    border: 0px;
+}
+
+.stragety_cell {
+    min-height: 30px;
+    border-bottom: 1px solid lightgrey;
+}
+
