@@ -1,24 +1,37 @@
 .strategy {
     min-width: 200px;
-    border-right: 1px solid steelblue;
+    border-right: 2px solid lightgrey;
     height: stretch;
     display: flex;
     flex-direction: column;
 }
 
 .strategy_header {
-    height: 60px;
+    height: 100px;
     display: flex;
+    flex-direction: column;
+}
+
+.strategy_header_name {
+    text-align: center;
+    border-bottom: 1px solid lightgrey;
+}
+
+.strategy_header_legs {
+    display: flex;
+    height: stretch;
 }
 
 .strategy_summary_col_header {
-    width: 40%;
-    border-right: 1px solid lightgrey;    
+    width: 120px;
+    border-right: 1px solid lightgrey;
+    box-sizing: border-box;
 }
 
 .strategy_col_header{
-    width: 30%;
-    border-right: 1px solid lightgrey;        
+    width: 100px;
+    border-right: 1px solid lightgrey;
+    box-sizing: border-box;
 }
 
 .strategy_col_header:last-child {
@@ -32,13 +45,15 @@
 }
 
 .strategy_summary_col {
-    width: 40%;
+    width: 120px;
     border-right: 1px solid lightgrey;
+    box-sizing: border-box;
 }
 
 .strategy_col {
-    width: 30%;
-    border-right: 1px solid lightgrey;    
+    width: 100px;
+    border-right: 1px solid lightgrey;
+    box-sizing: border-box;
 }
 
 .strategy_col:last-child {

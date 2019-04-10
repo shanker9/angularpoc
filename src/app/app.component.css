@@ -1,11 +1,25 @@
 .structure_container {
-    height: 100vh;
+    height: stretch;
     display: flex;
+    border: 1px solid lightgrey;
 }
 
 .structure_header{
     flex : 0.2;
     border-right: 1px solid lightgrey;
+    display: flex;
+    flex-direction: column;
+    overflow-y: hidden;
+    overflow-x: scroll;
+}
+
+.structure_header_title {
+    height: 100px;
+    border-bottom: 1px solid lightgrey;
+}
+
+.structure_header_body {
+    flex : 1;
 }
 
 .structure_body {
@@ -13,4 +27,3 @@
     display: flex;
     overflow: scroll;
 }
-
