@@ -27,4 +27,5 @@
 .summary_cell {
     min-height: 30px;
     border-bottom: 1px solid lightgrey;
+    box-sizing: border-box;
 }

@@ -16,7 +16,7 @@ export class StrategyComponent implements OnInit {
   constructor() { }
 
   ngOnInit() {
-    this.isExpanded = false;
+    this.isExpanded = true;
     const noOfLegs = Math.floor(Math.random() * (10 - 2) + 2);
     for (let i = 1; i <= noOfLegs; i++) {
       this.legs.push(`leg${i}`);
