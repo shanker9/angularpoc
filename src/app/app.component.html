@@ -7,8 +7,11 @@
         <div *ngFor="let row of summaryRowConfig" class="summary_cell"></div>
       </div>
     </div>
-    <div id="structure_body" class="structure_body" (scroll)="onScroll(e)">
-      <app-strategy *ngFor="let name of names" [name]="name" [summaryRowConfig]="summaryRowConfig"></app-strategy>
+    <div class="structure_body">
+      <cdk-virtual-scroll-viewport id="structure_body" style="width:100%;height: 100%;" orientation="horizontal" itemSize="200" (scroll)="onScroll($event)">
+        <app-strategy *cdkVirtualFor="let name of names" [name]="name" [summaryRowConfig]="summaryRowConfig">
+        </app-strategy>
+      </cdk-virtual-scroll-viewport>
     </div>
   </div>
 </div>

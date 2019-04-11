@@ -14,7 +14,8 @@
     </div>
     <ng-template [ngIf]="isExpanded">
       <div *ngFor="let leg of legs" class="strategy_col">
-        <div *ngFor="let row of summaryRowConfig; let i = index" [attr.data-index]="i" (click)="cellClick(i)" class="stragety_cell"></div>
+        <div *ngFor="let row of summaryRowConfig; let i = index" [attr.data-index]="i" (click)="cellClick(i)"
+          class="stragety_cell"></div>
       </div>
     </ng-template>
   </div>

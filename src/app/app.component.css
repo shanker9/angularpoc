@@ -22,9 +22,6 @@
 
 .structure_body {
     flex: 0.8;
-    display: flex;
-    overflow: scroll;
-    transition: width 2s;
 }
 
 .summary_cell {
